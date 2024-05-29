@@ -1,0 +1,27 @@
+.brand-list{
+    padding: 30px;
+}
+.brand-list .slider .brand{
+    margin: 20px;
+}
+.brand-list .slider{
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
+@media (max-width:600px) {
+    .brand-list{
+        padding: 0 50px;
+    }
+    .brand-list .slider .brand{
+        margin:  0;
+    }
+    .brand-list .slider{
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+    
+}

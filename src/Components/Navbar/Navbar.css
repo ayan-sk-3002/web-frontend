@@ -1,0 +1,130 @@
+.navbar{
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 20px 80px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+.navbar.scrolled{
+    background: #000;
+}
+.menu-on-btn,
+.menu-off-btn{
+    display: none;
+}
+.navbar .logo{
+    margin: 0;
+    line-height: 0;
+}
+.navbar .menus{
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+    padding-left: 50px;
+}
+.navbar h5{
+    font-size: 1.8em;
+    color: #fff;
+}
+.navbar .menu{
+    float: left;
+}
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 400;
+}
+.navbar a{
+    font-size: 26px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar  a::before{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 0%;
+    left: 0;
+    height: 3px;
+    line-height: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width: 80%;
+}
+.user-info{
+    gap: 30px;
+}
+.menu-off-btn{
+    color: #fff;
+}
+
+
+@media (max-width:600px) {
+    .menu-on-btn,
+    .menu-off-btn{
+        display: flex;
+    }
+    .navbar{
+        position: relative;
+        padding: 20px ;
+    }
+    .navbar .logo h5{
+        font-size: 1em;
+        color: #000;
+    }
+    .navbar .menus{
+        position: absolute;
+        top: 100%;
+        right: -4000px;
+        bottom: 0;
+        width: 70vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: start;
+        transition: 0.3s;
+
+    }
+    .menus.onmenu{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        width: 70vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.283);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: start;
+
+    }
+    .navbar .menus .menu{
+        flex-direction: column;
+        align-items: start;
+        padding-top: 20px;
+    }
+    .navbar .menus .menu ul {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .navbar .menus .menu ul li a{
+        font-size: 0.8em;
+    }
+}

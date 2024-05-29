@@ -1,0 +1,108 @@
+.add-product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+    background-color: #f5f5f5;
+}
+
+.add-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 80px ;
+    width: 80%;
+}
+
+.add-to-cart-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #525252;
+}
+
+/* Related Products */
+.related-products {
+    width: 80%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-container input{
+    border: 1px solid #ccc;
+    background: #00000000;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+.file-img{
+    width: 100%;
+    max-width: 120px;
+}
+button{
+    margin-top: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #000;  
+}
+.detail{
+    display: flex;
+    gap: 20px;
+}
+textarea{
+    border: 1px solid #ccc;
+    background: #00000000;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .add-product-container {
+        flex-direction: column;
+        padding: 80px 20px ;
+    }
+
+    .image-container, .details-container {
+        width: 100%;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    
+}
