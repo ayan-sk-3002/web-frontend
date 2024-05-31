@@ -40,10 +40,9 @@ const Admin = () => {
             <div className='cart-items'>
                 {
                     products.length>0?products.map((product,index) => {
-
                         return (
                             <div key={index} className="cart-item">
-                                <img src={product.image} alt={products.name} className="cart-item-image" />
+                                <img src={index > 8 ? product.image : all_product[index]?.image} alt={products.name} className="cart-item-image" />
                                 <div className="cart-item-details">
                                     <h3 className="cart-item-name">{product.name}</h3>
                                     <div className="cart-item-amount">

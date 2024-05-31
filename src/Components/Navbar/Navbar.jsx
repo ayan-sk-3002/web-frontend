@@ -24,7 +24,7 @@ const Navbar = (props) => {
     return (
         <header className={`navbar flex-box ${scroll ? 'scrolled' : ''}`}>
             <div className="logo">
-                <h5>ProManner</h5>
+                <Link to={"/"}><h5>ProManner</h5></Link>
             </div>
             <div className={`menus flex-box ${menu ? 'onmenu' : ''}`}>
                 <div className='menu flex-box'>
@@ -38,13 +38,13 @@ const Navbar = (props) => {
                         </li>
                         {/* <li>
                             <Link to={"/blog"}>BLOG</Link>
-                        </li> */}
+                        </li> 
                         <li>
                             <Link to={"/about"}>ABOUT</Link>
                         </li>
                         <li>
                             <Link to={"/contact"}>CONTACT</Link>
-                        </li>
+                        </li>*/}
                     </ul>
                 </div>
                 <div className="user-info flex-box">

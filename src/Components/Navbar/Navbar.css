@@ -80,7 +80,12 @@
         position: relative;
         padding: 20px ;
     }
-    .navbar .logo h5{
+    .navbar .logo a{
+        font-size: 1em;
+        color: #000;
+        text-decoration: none;
+    }
+    .navbar .logo  h5{
         font-size: 1em;
         color: #000;
     }
@@ -126,5 +131,8 @@
     }
     .navbar .menus .menu ul li a{
         font-size: 0.8em;
+    }
+    .navbar .cart-box{
+        margin-bottom: 50px;
     }
 }

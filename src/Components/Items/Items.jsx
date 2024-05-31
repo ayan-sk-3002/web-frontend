@@ -17,7 +17,7 @@ const Items = (props) => {
         <div className="item-action">
      <button className='flex-box' onClick={()=>addToCart(props.id)}> {cartItemAmount>0?<>ADDED TO CART</>:<>ADD TO CART</>}</button>
     <Link to={`/product/${props.id}`}> <FaRegEye className='view-btn'/></Link>
-      </div>
+      </div> 
       </div>
      
     </div>

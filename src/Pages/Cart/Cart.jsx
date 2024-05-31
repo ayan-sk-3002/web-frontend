@@ -23,11 +23,11 @@ const Cart = () => {
         <div className='cart-page'>
             <h1 className='cart-title'>My Cart</h1>
             <div className='cart-items'>
-                {products.map((product) => {
+                {products.map((product,i) => {
                     if (cartItems[product.id] !== 0) {
                         return (
                             <div key={product.id} className="cart-item">
-                                <img src={product.image} alt={product.name} className="cart-item-image" />
+                                <img src={i > 8 ? product.image : all_product[i]?.image} alt={product.name} className="cart-item-image" />
                                 <div className="cart-item-details">
                                     <h3 className="cart-item-name">{product.name}</h3>
                                     <div className="cart-item-amount">
