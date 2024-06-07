@@ -46,7 +46,7 @@ const Admin = () => {
                                 <div className="cart-item-details">
                                     <h3 className="cart-item-name">{product.name}</h3>
                                     <div className="cart-item-amount">
-                                        <button className="update-btn btn-style" >Update</button>
+                                        {/* <button className="update-btn btn-style" >Update</button> */}
                                       
                                         <button onClick={() => remove_product(product.id)} className="delete-btn btn-style" >Delete</button>
                                     </div>

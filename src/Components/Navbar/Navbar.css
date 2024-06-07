@@ -4,7 +4,8 @@
     top: 0;
     width: 100vw;
     padding: 20px 80px;
-    z-index: 9999;
+    z-index: 999999;
+    overflow-x:visible;
     transition: 0.3s;
 }
 .navbar.scrolled{
@@ -22,14 +23,16 @@
     justify-content: space-between;
     flex: 1;
     height: 100%;
+    z-index: 999999;
     padding-left: 50px;
 }
 .navbar h5{
-    font-size: 1.8em;
+    font-size: 1em;
     color: #fff;
 }
 .navbar .menu{
     float: left;
+    z-index: 999999;
 }
 .navbar ul{
     display: flex;
@@ -90,6 +93,7 @@
         color: #000;
     }
     .navbar .menus{
+        z-index: 999999;
         position: absolute;
         top: 100%;
         right: -4000px;

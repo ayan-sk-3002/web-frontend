@@ -18,7 +18,7 @@ const Shop = () => {
     <div className='shop'>
       <PageInfo image={banner} name={"Shop"}/>
       {products.length>0?
-      <Products data={products} title={""} subTitle={""}/>:<h1 style={{textAlign:'center',padding:'80px 0'}}>No Prodvuts avilable</h1>}
+      <Products data={products} title={""} subTitle={""}/>:<h1 style={{textAlign:'center',padding:'80px 0'}}>No Products avilable</h1>}
       
     </div>
   )

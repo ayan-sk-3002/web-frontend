@@ -64,6 +64,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: auto;
+        overflow-x: hidden;
+
+        
     }
     .banner .description{
         flex-basis: 100%;

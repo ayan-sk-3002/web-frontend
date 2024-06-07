@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import '../Items/Items.css'
 import { FaRegEye } from "react-icons/fa6";
 import { CartContext } from '../../Context/CartContext';
-import { IoCheckboxOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const Items = (props) => {
   const {addToCart, cartItems} = useContext(CartContext)
